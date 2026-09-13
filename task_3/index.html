@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3 — WebSocket чат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="chat">
+        <h1 class="chat__title">Эхо-чат</h1>
+
+        <div class="chat__controls">
+            <input
+                class="chat__input"
+                id="message-input"
+                type="text"
+                placeholder="Введите сообщение"
+            >
+            <button class="chat__button" id="send-button" type="button">
+                Отправить
+            </button>
+            <button class="chat__button" id="geo-button" type="button">
+                Геолокация
+            </button>
+        </div>
+
+        <div class="chat__messages" id="messages"></div>
+        <p class="chat__status" id="status">Подключение к серверу...</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
